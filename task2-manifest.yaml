@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: flask
   labels:
-    app: flask
+    app: flask-app
 spec: 
   containers: 
   - name: flask
@@ -22,7 +22,7 @@ metadata:
 spec: 
   type: ClusterIP
   selector: 
-    app: flask
+    app: flask-app
   ports:
   - protocol: TCP
     port: 5000
@@ -38,6 +38,7 @@ spec:
   containers: 
   - name: flask
     image: mcmuds/task2-db:latest # Dockerhub
+    imagePullPolicy: Always
     ports: 
     - containerPort: 3306
     env:

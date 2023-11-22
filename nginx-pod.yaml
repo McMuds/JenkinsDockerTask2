@@ -11,6 +11,7 @@ spec:
       name: nginx-config
   containers:
   - image: nginx:alpine
+    imagePullPolicy: Always
     name: nginx
     volumeMounts:
     - name: nginx-vol
