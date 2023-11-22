@@ -16,6 +16,7 @@ LOCK TABLES `users` WRITE;
 INSERT INTO `users` (first_name, last_name, email) VALUES ('Ben','Hesketh','test@test7.com'),
 ('Luke','Benson','test@test.com'),
 ('Matt','Hunt','test4@test.com'),
+('Adam','Gray','super@hero.com'),
 ('Claire','McMurdo','test3@test.com');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
